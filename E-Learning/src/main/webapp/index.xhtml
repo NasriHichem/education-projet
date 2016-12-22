@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">        
+  <h:head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Education</title>
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com"/>
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template"/>    
+    <link rel="stylesheet" type="text/css" href="resources/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/css/imagehover.min.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans"/> 
+  </h:head>
+  <h:body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Edu<span>cation</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <h:form>
+          <ul class="nav navbar-nav navbar-right">        
+          <li><h:commandLink value="Accueil" action="index.xhtml"/></li>
+          <li><a href="#recherche">Démarer recherche</a></li>  
+          <li><a href="#documents">Documents</a></li>
+          <li><a href="#contact">Contact</a></li>  
+          <li><a href="inscription.xhtml">Inscription</a></li>
+          <li class="btn-trial"><a data-target="#login" data-toggle="modal">Connexion</a></li>         
+        </ul>
+        </h:form>
+        </div>
+      </div>
+    </nav>
+    <!--/ Navigation bar-->
+    <!--Login box-->
+    <div class="modal fade" id="login" role="dialog">
+      <div class="modal-dialog modal-sm">
+      
+        <!-- Modal content no 1-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-center form-title">Connexion</h4>
+          </div>
+          <div class="modal-body padtrbl">
+
+            <div class="login-box-body">
+              <p class="login-box-msg">Connectez pour demmarer votre recherche</p>
+              <div class="form-group">
+                <h:form>
+                 <div class="form-group has-feedback">
+                     
+                     <h:inputText value="" class="form-control"  p:placeholder="Nom utilisateur" id="loginid" autocomplete="off"/>        
+            <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span><!---Alredy exists  ! -->
+                      <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                  </div>
+                  <div class="form-group has-feedback">
+                       <h:inputSecret value="" class="form-control"  p:placeholder="Mot de passe " id="loginpsw" autocomplete="off"/>                    
+            <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
+                      <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                  </div>
+                  <div class="row">
+                      <div class="col-xs-12">
+                          <div class="checkbox icheck">
+                              <label>
+                                <h:selectManyCheckbox id="loginrem">
+   	                        <f:selectItem itemValue="" itemLabel="Afficher mot de passe " /> 	              
+                                </h:selectManyCheckbox>                             
+                              </label>
+                          </div>
+                      </div>
+                      <div class="col-xs-12">
+                          <h:commandButton class="btn btn-green btn-block btn-flat" value="Connexion"/>
+                      </div>
+                  </div>
+                </h:form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--/ Login box-->
+    <!--Banner-->
+    <div class="banner">
+      <div class="bg-color">
+        <div class="container">
+          <div class="row">
+            <div class="banner-text text-center">
+              <div class="text-border">
+                <h2 class="text-dec">Efficacité et Richesse</h2>
+              </div>
+              <div class="intro-para text-center quote">
+                <p class="big-text">Bessoin de cours  . . . Rejoingner nous .</p>
+                <p class="small-text">La bibliotheque des documents le plus populaire. </p>
+                <a href="#." class="btn">Bienvenue</a>
+              </div>
+              <a href="#feature" class="mouse-hover"><div class="mouse"></div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Banner-->
+           
+    <!--Recherche-->
+    <section id="recherche">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+              <h2 class="text-center">Chercher des documents</h2>
+              <p class="cta-2-txt">Une bibliotheque a vos dispositions.</p>
+             <div class="cta-2-form text-center">
+              <h:form>
+                  <h:inputText value="Nom ou Auteur"/>
+                  <h:commandButton class="btn-green" value="Chercher" />               
+                </h:form>
+             </div>   
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--/ Recherche-->
+    <hr/>
+    <!--documents-->
+    <section id="documents" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2>Notre documents</h2>
+            <p>Plusieurs categories sont disponibles. </p>
+            <hr class="bottom-line"/>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="service-box text-center">
+              <div class="icon-box">
+                <i class="fa fa-html5 color-green"></i>
+              </div>
+              <div class="icon-text">
+                <h4 class="ser-text">Documents informatique</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="service-box text-center">
+              <div class="icon-box">
+                <i class="fa fa-css3 color-green"></i>
+              </div>
+              <div class="icon-text">
+                <h4 class="ser-text">Documents scientifiques</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="service-box text-center">
+              <div class="icon-box">
+                <i class="fa fa-joomla color-green"></i>
+              </div>
+              <div class="icon-text">
+                <h4 class="ser-text">Documents culuturels</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ documents-->     
+    <hr/>
+    <!--Contact-->
+    <section id ="contact" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2>Contactez-nous </h2>
+            <p>Nous sommes ici pour vos questions.</p>
+            <hr class="bottom-line"/>
+          </div>
+          <div id="sendmessage">Votre message .Merci!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+              <div class="col-md-6 col-sm-6 col-xs-12 left">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control form" id="name" placeholder="Votre nom" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="Objet" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-sm-6 col-xs-12 right">
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                </div>
+              </div>
+              
+              <div class="col-xs-12">
+                <!-- Button -->
+                <button type="submit" id="submit" name="Envoyer" class="form contact-form-button light-form-button oswald light">Envoyer</button>
+              </div>
+          </form>
+          
+        </div>
+      </div>
+    </section>
+    <!--/ Contact-->
+    <!--Footer-->
+    <footer id="footer" class="footer">
+      <div class="container text-center">
+    
+      <h3>Liens utils</h3>
+      <ul class="social-links">
+        <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+      </ul>
+        © SmartDev 2016. Tous droits reservés.
+      
+      </div>
+    </footer>
+    <!--/ Footer-->
+    <script language="javascript" src="resources/js/jquery.min.js"/>
+    <script language="javascript" src="resources/js/jquery.easing.min.js"/>
+    <script language="javascript" src="resources/js/bootstrap.min.js"/>
+    <script language="javascript" src="resources/js/custom.js"/>
+    <script language="javascript" src="resources/js/contactform.js"/>
+   </h:body>
+</html>
+
